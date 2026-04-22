@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme static {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-script: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --color-bg: #f4efe6;
+  --color-bg-soft: #ebe4d6;
+  --color-ink: #1d2a22;
+  --color-ink-soft: #4a5649;
+  --color-muted: #7a7668;
+  --color-line: #d8cfbd;
+  --color-accent: #2e4a2b;
+  --color-accent-soft: #5b7a4b;
+  --color-accent-ink: #f4efe6;
+  --color-cream: #faf6ee;
+  --color-sun: #d4a94a;
+
+  --color-primary-50: #f4efe6;
+  --color-primary-100: #ebe4d6;
+  --color-primary-200: #d8cfbd;
+  --color-primary-300: #c4b89e;
+  --color-primary-400: #a09072;
+  --color-primary-500: #5b7a4b;
+  --color-primary-600: #2e4a2b;
+  --color-primary-700: #243c22;
+  --color-primary-800: #1d2a22;
+  --color-primary-900: #141e18;
+  --color-primary-950: #0a0f0c;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Eyebrow label with leading line */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* Sun/gold variant for dark section backgrounds */
+.eyebrow-sun {
+  color: var(--color-sun);
+}
+
+/* Display headings with Fraunces variable font axes */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-variation-settings: "SOFT" 50, "WONK" 0, "opsz" 144;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+
+.display em {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 144;
+  color: var(--color-accent);
+}

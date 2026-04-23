@@ -92,7 +92,6 @@
                 width="320"
                 height="427"
                 sizes="(min-width: 1024px) 320px, 288px"
-                densities="1 2"
                 class="w-full h-full object-cover"
                 loading="eager"
                 fetchpriority="high"

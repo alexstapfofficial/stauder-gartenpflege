@@ -65,50 +65,20 @@
     </div>
 
     <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-center">
-        <!-- Left: text -->
-        <div>
+      <div class="flex flex-col gap-8 lg:grid lg:grid-cols-[1.2fr_1fr] lg:gap-x-16 lg:gap-y-0 lg:items-start">
+
+        <!-- Heading (mobile: first, desktop: col-1 row-1) -->
+        <div class="order-1 lg:col-start-1 lg:row-start-1">
           <div class="mb-6">
             <span class="eyebrow"><slot name="eyebrow" /></span>
           </div>
-
-          <h1 class="display text-5xl lg:text-6xl xl:text-7xl mb-6 text-ink">
-            <slot name="headline" /><br>
-            <em><slot name="headline-italic" /></em>
+          <h1 class="display text-5xl lg:text-6xl xl:text-7xl text-ink">
+            <slot name="headline" />
           </h1>
-
-          <p class="text-lg leading-relaxed mb-8 max-w-lg text-ink-soft">
-            <slot name="lead" />
-          </p>
-
-          <div class="flex flex-wrap gap-3">
-            <UButton
-              to="#kontakt"
-              size="lg"
-              style="background-color: var(--color-accent); color: var(--color-accent-ink);"
-              class="hover:opacity-90 transition-opacity font-medium px-6 rounded-full"
-            >
-              <slot name="cta-primary" />
-            </UButton>
-            <UButton
-              to="#leistungen"
-              size="lg"
-              variant="ghost"
-              style="color: var(--color-accent); border: 1.5px solid var(--color-accent);"
-              class="hover:bg-accent/8 transition-colors font-medium px-6 rounded-full"
-            >
-              <slot name="cta-secondary" />
-            </UButton>
-          </div>
-
-          <!-- Stats as flex row with top divider -->
-          <div class="flex flex-wrap gap-7 border-t border-line pt-7 mt-12">
-            <slot name="stats" />
-          </div>
         </div>
 
-        <!-- Right: portrait -->
-        <div class="relative flex justify-center lg:justify-end order-first lg:order-last">
+        <!-- Portrait (mobile: second, desktop: col-2 row-1+2) -->
+        <div class="order-2 lg:col-start-2 lg:row-start-1 lg:row-span-2 relative flex justify-center lg:justify-end">
           <div class="relative">
             <!-- Pill/arch portrait shape -->
             <div
@@ -141,6 +111,41 @@
             </div>
           </div>
         </div>
+
+        <!-- Body text (mobile: third, desktop: col-1 row-2) -->
+        <div class="order-3 lg:col-start-1 lg:row-start-2 lg:pt-0">
+          <em class="display text-5xl lg:text-6xl xl:text-7xl text-ink block mb-6">
+            <slot name="headline-italic" />
+          </em>
+          <p class="text-lg leading-relaxed mb-8 max-w-lg text-ink-soft">
+            <slot name="lead" />
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <UButton
+              to="#kontakt"
+              size="lg"
+              style="background-color: var(--color-accent); color: var(--color-accent-ink);"
+              class="hover:opacity-90 transition-opacity font-medium px-6 rounded-full"
+            >
+              <slot name="cta-primary" />
+            </UButton>
+            <UButton
+              to="#leistungen"
+              size="lg"
+              variant="ghost"
+              style="color: var(--color-accent); border: 1.5px solid var(--color-accent);"
+              class="hover:bg-accent/8 transition-colors font-medium px-6 rounded-full"
+            >
+              <slot name="cta-secondary" />
+            </UButton>
+          </div>
+
+          <div class="flex flex-wrap gap-7 border-t border-line pt-7 mt-12">
+            <slot name="stats" />
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

@@ -43,7 +43,10 @@ export default defineNuxtConfig({
       }
     },
     display: 'swap',
-    preload: true
+    preload: true,
+    preconnect: true,
+    download: true,
+    inject: true
   },
 
   image: {

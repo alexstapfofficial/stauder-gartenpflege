@@ -19,10 +19,10 @@
                 src="/img/fabian.png"
                 alt="Fabian Stauder"
                 format="webp"
-                quality="85"
+                quality="70"
                 width="384"
                 height="480"
-                sizes="100vw sm:384px"
+                sizes="(min-width: 640px) 384px, 100vw"
                 class="w-full h-full object-cover"
                 loading="lazy"
               />

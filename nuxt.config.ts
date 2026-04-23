@@ -61,7 +61,7 @@ export default defineNuxtConfig({
       lg: 800,
       xl: 1200
     },
-    quality: 80
+    quality: 70
   },
 
   eslint: {

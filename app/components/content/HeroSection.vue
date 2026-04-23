@@ -5,7 +5,7 @@
 <template>
   <section class="relative pt-20 pb-24 lg:pt-28 lg:pb-32 bg-bg">
     <!-- Blobs clipped to section -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <div class="blob blob-1" />
       <div class="blob blob-2" />
     </div>
@@ -117,7 +117,7 @@
             >
               <NuxtImg
                 src="/img/hero.png"
-                alt="Fabian Stauder – Gartenpflege Untermain-Spessart"
+                alt="Fabian Stauder – Gartenpflege Spessart"
                 class="w-full h-full object-cover"
                 loading="eager"
               />

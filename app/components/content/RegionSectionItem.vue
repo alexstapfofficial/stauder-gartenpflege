@@ -9,17 +9,12 @@ withDefaults(defineProps<{
 
 <template>
   <div
-    class="flex items-center justify-between px-4 py-3 rounded-lg transition-colors"
+    class="flex items-center justify-between px-4 py-3 rounded-full transition-colors"
     :class="isBase ? 'bg-accent text-accent-ink' : 'bg-cream hover:bg-accent/5'"
   >
-    <div class="flex items-center gap-2.5">
-      <UIcon
-        :name="isBase ? 'i-lucide-home' : 'i-lucide-map-pin'"
-        class="w-3.5 h-3.5"
-        :class="isBase ? 'text-sun' : 'text-accent-soft'"
-      />
+    <div class="flex items-center grow-0 gap-2.5">
       <span
-        class="text-sm font-medium"
+        class="text-xs font-medium"
         :class="isBase ? 'font-display text-accent-ink' : 'text-ink'"
       >
         {{ name }}

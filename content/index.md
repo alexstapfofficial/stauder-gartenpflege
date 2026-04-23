@@ -1,6 +1,6 @@
 ---
 title: Stauder Gartenpflege – Dein Garten. Meine Leidenschaft.
-description: Professionelle Gartenpflege im Untermain-Spessart. Rasenpflege, Rückschnitt, Beetpflege und mehr – zuverlässig, sorgfältig, ohne Chemie.
+description: Professionelle Gartenpflege im Spessart. Rasenpflege, Rückschnitt, Beetpflege und mehr – zuverlässig, sorgfältig, ohne Chemie.
 
 contact:
   phone: "0151 · 2345 6789"
@@ -10,7 +10,7 @@ contact:
 
 ::hero-section
 #eyebrow
-Ein-Mann-Betrieb · Untermain - Spessart
+lokalerBetrieb · Untermain - Spessart
 
 #headline
 Dein Garten.
@@ -42,6 +42,9 @@ Bereit für neue Gärten
   ::hero-section-item{value="März – Nov"}
   Saison
   ::
+::
+
+::botanical-divider
 ::
 
 ::services-section
@@ -88,28 +91,19 @@ Diese Dinge mache ich richtig gut. Brauchst du was anderes? Frag mich einfach �
 Über mich
 
 #headline
-Gude, ich bin *Fabian.*
+Hi, ich bin *Fabian.*
 
 #quote
 Ich mag Gärten, die sich nicht wie Gärten anfühlen, sondern wie ein Stück Zuhause unter freiem Himmel.
 
 #content
-Bereits als Kind war ich lieber im Garten als vor dem Fernseher. Heute mache ich genau das beruflich – als kleiner Ein-Mann-Betrieb im Untermain-Spessart, mit viel Herzblut und noch mehr Geduld.
+Bereits als Kind war ich lieber im Garten als vor dem Fernseher. Heute mache ich genau das beruflich – als kleiner Betrieb im Spessart, mit viel Herzblut und noch mehr Geduld.
 
-Ich arbeite ohne große Maschinenflotte, dafür genau und persönlich. Du hast immer denselben Ansprechpartner, dieselbe Handschrift – vom ersten Anruf bis zum letzten Laubsack.
+Ich arbeite mit modernen Werkzeugen – das Handwerk bleibt persönlich, die Umsetzung wird schneller. Du hast immer denselben Ansprechpartner, dieselbe Handschrift – vom ersten Anruf bis zum letzten Laubsack.
 
 #signature
 Fabian
 
-#facts
-  ::about-section-item{label="Ausbildung" value="Landschaftsgärtner"}
-  ::
-
-  ::about-section-item{label="Basis" value="Untermain-Spessart"}
-  ::
-
-  ::about-section-item{label="Arbeitsweise" value="Ohne Chemie"}
-  ::
 ::
 
 ::process-section
@@ -148,10 +142,10 @@ Galerie
 Ein paar *Vorher & Nachher.*
 
 #lead
-Bilder sagen mehr. Hier ein Auszug aus meinen letzten Projekten – ziehst mit dem Auge von links nach rechts.
+Bilder sagen mehr. Hier ein Auszug aus meinen letzten Projekten – ziehst mit dem Slider von links nach rechts.
 
 #items
-  ::gallery-section-item{title="Garten komplett" location="Hanau" beforeSrc="/img/gallery/vorher.jpg" afterSrc="/img/gallery/nachher.jpg" beforeAlt="Garten vor der Erneuerung in Friedrichsdorf" afterAlt="Garten nach der Erneuerung in Friedrichsdorf"}
+  ::gallery-section-item{title="Garten komplett" location="Hanau" beforeSrc="/img/gallery/Hanau_vorher.jpg" afterSrc="/img/gallery/Hanau_nachher.jpg" beforeAlt="Garten vor der Erneuerung in Friedrichsdorf" afterAlt="Garten nach der Erneuerung in Friedrichsdorf"}
   ::
 ::
 
@@ -160,10 +154,61 @@ Bilder sagen mehr. Hier ein Auszug aus meinen letzten Projekten – ziehst mit d
 Einzugsgebiet
 
 #headline
-Im *Untermain - Spessart* zu Hause.
+Im *Spessart* zu Hause.
 
 #lead
-Ich arbeite im Umkreis von rund 18 km um Mönchberg – immer mit dem eigenen Fahrzeug, also geringel Zusatzkosten für die Anfahrt innerhalb der Zone.
+Ich arbeite im Umkreis von rund 18 km um Mönchberg – immer mit dem eigenen Fahrzeug, also geringe Zusatzkosten für die Anfahrt innerhalb der Zone.
+
+#info
+Du kommst von weiter entfernt? Für regelmäßige oder große Aufträge fahre ich auch gerne weiter – sprich mich einfach an!
+
+#cities
+  ::region-section-item{name="Mönchberg" :isBase="true"}
+  ::
+  ::region-section-item{name="Röllbach"}
+  ::
+  ::region-section-item{name="Eschau"}
+  ::
+  ::region-section-item{name="Schmachtenberg"}
+  ::
+  ::region-section-item{name="Collenberg"}
+  ::
+  ::region-section-item{name="Erlenbach"}
+  ::
+  ::region-section-item{name="Klingenberg"}
+  ::
+  ::region-section-item{name="Wörth"}
+  ::
+  ::region-section-item{name="Großheubach"}
+  ::
+  ::region-section-item{name="Kleinheubach"}
+  ::
+  ::region-section-item{name="Elsenfeld"}
+  ::
+  ::region-section-item{name="Heimbuchenthal"}
+  ::
+  ::region-section-item{name="Leidersbach"}
+  ::
+  ::region-section-item{name="Obernburg"}
+  ::
+  ::region-section-item{name="Sulzbach"}
+  ::
+  ::region-section-item{name="Miltenberg"}
+  ::
+  ::region-section-item{name="Großwallstadt"}
+  ::
+  ::region-section-item{name="Bürgstadt"}
+  ::
+  ::region-section-item{name="Dammbach"}
+  ::
+  ::region-section-item{name="Stadtprozelten"}
+  ::
+  ::region-section-item{name="Kleinwallstadt"}
+  ::
+  ::region-section-item{name="Niedernberg"}
+  ::
+  ::region-section-item{name="Dorfprozelten"}
+  ::
 ::
 
 ::contact-section{phone="0151 · 2345 6789" email="hallo@stauder-gartenpflege.de" hours="Mo–Sa, 7–18 Uhr"}
@@ -171,7 +216,7 @@ Ich arbeite im Umkreis von rund 18 km um Mönchberg – immer mit dem eigenen Fa
 Kontakt
 
 #heading
-Lass uns quatschen über deinen Garten.
+Lass uns *quatschen* über deinen Garten.
 
 #lead
 Kein Formular, keine Warteschleife. Ruf mich an oder schreib eine Nachricht – ich melde mich noch am selben Tag.

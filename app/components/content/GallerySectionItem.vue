@@ -16,7 +16,7 @@ function startDrag(e: MouseEvent | TouchEvent) {
 
   const onMove = (moveEvent: MouseEvent | TouchEvent) => {
     const rect = container.getBoundingClientRect()
-    const clientX = 'touches' in moveEvent ? moveEvent.touches[0].clientX : moveEvent.clientX
+    const clientX = 'touches' in moveEvent ? (moveEvent.touches[0]?.clientX ?? 0) : moveEvent.clientX
     sliderValue.value = Math.min(100, Math.max(0, ((clientX - rect.left) / rect.width) * 100))
   }
 

@@ -4,33 +4,66 @@
 </script>
 
 <template>
-  <section id="ablauf" class="relative py-20 lg:py-28 bg-accent">
-    <!-- Botanical decoration -->
-    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-      <svg class="absolute top-0 right-0 w-48 h-48 opacity-10" viewBox="0 0 200 200" fill="none">
-        <path d="M160 20 C160 20, 120 60, 100 100 C80 140, 90 180, 120 190" stroke="var(--color-accent-ink)" stroke-width="3" stroke-linecap="round" />
-        <path d="M100 100 C100 100, 70 80, 50 90" stroke="var(--color-accent-ink)" stroke-width="2" stroke-linecap="round" />
-        <path d="M120 130 C120 130, 150 120, 160 100" stroke="var(--color-accent-ink)" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </div>
+  <section id="ablauf" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-accent overflow-hidden rounded-[40px] px-10 py-16 lg:px-15 lg:py-25">
 
-    <div class="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <!-- Section header -->
-      <div class="text-center mb-14 lg:mb-20">
-        <div class="mb-4">
-          <span class="eyebrow eyebrow-sun"><slot name="eyebrow" /></span>
+        <!-- Botanical: vine top-right -->
+        <div class="pointer-events-none absolute top-5 right-10 w-36 h-44 text-accent-ink opacity-20 rotate-12" aria-hidden="true">
+          <svg viewBox="0 0 160 100" fill="none" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <path d="M4 50 C 30 20, 60 80, 90 40 C 110 10, 140 60, 156 30" />
+              <ellipse cx="20" cy="38" rx="8" ry="3.5" fill="currentColor" fill-opacity=".3" transform="rotate(-30 20 38)" stroke="none" />
+              <ellipse cx="50" cy="62" rx="9" ry="3.5" fill="currentColor" fill-opacity=".3" transform="rotate(25 50 62)" stroke="none" />
+              <ellipse cx="80" cy="40" rx="8" ry="3.5" fill="currentColor" fill-opacity=".3" transform="rotate(-15 80 40)" stroke="none" />
+              <ellipse cx="110" cy="34" rx="8" ry="3.5" fill="currentColor" fill-opacity=".3" transform="rotate(-30 110 34)" stroke="none" />
+              <ellipse cx="140" cy="52" rx="9" ry="3.5" fill="currentColor" fill-opacity=".3" transform="rotate(25 140 52)" stroke="none" />
+            </g>
+          </svg>
         </div>
-        <h2 class="display text-4xl lg:text-5xl mb-4 text-accent-ink">
-          <slot name="headline" />
-        </h2>
-        <p class="text-lg max-w-md mx-auto text-accent-ink/70">
-          <slot name="lead" />
-        </p>
-      </div>
 
-      <!-- ProcessSectionItem components via #steps slot -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <slot name="steps" />
+        <!-- Botanical: twig bottom-left -->
+        <div class="pointer-events-none absolute bottom-10 left-10 w-30 h-36 text-accent-ink opacity-20 -rotate-10" aria-hidden="true">
+          <svg viewBox="0 0 140 60" fill="none" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+              <path d="M4 30 C 40 30, 80 30, 136 30" />
+              <ellipse cx="24" cy="20" rx="10" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(-20 24 20)" stroke="none" />
+              <ellipse cx="42" cy="40" rx="10" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(20 42 40)" stroke="none" />
+              <ellipse cx="60" cy="18" rx="11" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(-22 60 18)" stroke="none" />
+              <ellipse cx="80" cy="42" rx="11" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(22 80 42)" stroke="none" />
+              <ellipse cx="100" cy="20" rx="10" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(-20 100 20)" stroke="none" />
+              <ellipse cx="120" cy="40" rx="9" ry="4" fill="currentColor" fill-opacity=".3" transform="rotate(20 120 40)" stroke="none" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Section header: eyebrow left, headline + lead right -->
+        <div class="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-15 items-end mb-16 lg:mb-18">
+          <div>
+            <span class="eyebrow eyebrow-sun"><slot name="eyebrow" /></span>
+          </div>
+          <div>
+            <h2 class="display text-4xl lg:text-5xl mb-4 text-accent-ink">
+              <slot name="headline" />
+            </h2>
+            <p class="text-[17px] leading-relaxed text-accent-ink/80">
+              <slot name="lead" />
+            </p>
+          </div>
+        </div>
+
+        <!-- Steps with dashed connector line -->
+        <div class="relative">
+          <div
+            class="absolute h-px top-7 left-[2%] right-[2%] opacity-35 hidden lg:block"
+            style="background: repeating-linear-gradient(90deg, var(--color-accent-ink) 0 6px, transparent 6px 14px)"
+            aria-hidden="true"
+          />
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <slot name="steps" />
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

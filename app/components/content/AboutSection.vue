@@ -22,7 +22,7 @@
                 quality="75"
                 width="384"
                 height="480"
-                sizes="(min-width: 480px) 384px, 100vw"
+                sizes="sm:384px"
                 class="w-full h-full object-cover"
                 loading="lazy"
               />

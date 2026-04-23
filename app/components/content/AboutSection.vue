@@ -19,7 +19,7 @@
                 src="/img/fabian.png"
                 alt="Fabian Stauder"
                 format="webp"
-                quality="75"
+                quality="70"
                 width="384"
                 height="480"
                 sizes="sm:384px"

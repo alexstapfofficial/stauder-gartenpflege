@@ -11,8 +11,8 @@
 
 @theme static {
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-script: 'Instrument Serif', Georgia, serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-script: 'Fraunces', Georgia, serif;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
 
   --color-bg: #f4efe6;

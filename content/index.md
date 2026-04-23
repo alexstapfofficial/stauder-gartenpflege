@@ -16,7 +16,7 @@ lokalerBetrieb · Untermain - Spessart
 Dein Garten.
 
 #headline-italic
-Meine Leidenschaft.
+*Meine Leidenschaft.*
 
 #lead
 Gude, ich bin Fabian. Ich pflege Gärten so, als wären sie meine eigenen – vom ersten Rasenschnitt im März bis zum letzten Laubhaufen im November. Klein, persönlich, zuverlässig.

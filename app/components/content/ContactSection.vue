@@ -58,13 +58,18 @@ const props = withDefaults(defineProps<{
             <slot name="heading" />
           </p>
           <div class="flex flex-col gap-2.5 text-[15px]">
-            <a :href="`tel:${props.phone.replace(/[\s·]/g, '')}`" class="text-accent-ink/80 hover:text-accent-ink transition-colors">
-              ☎ {{ props.phone }}
+            <a :href="`tel:${props.phone.replace(/[\s·]/g, '')}`" class="flex items-center gap-2.5 text-accent-ink/80 hover:text-accent-ink transition-colors">
+              <UIcon name="i-lucide-phone" class="w-4 h-4 shrink-0" />
+              {{ props.phone }}
             </a>
-            <a :href="`mailto:${props.email}`" class="text-accent-ink/80 hover:text-accent-ink transition-colors">
-              ✉ {{ props.email }}
+            <a :href="`mailto:${props.email}`" class="flex items-center gap-2.5 text-accent-ink/80 hover:text-accent-ink transition-colors">
+              <UIcon name="i-lucide-mail" class="w-4 h-4 shrink-0" />
+              {{ props.email }}
             </a>
-            <span class="text-accent-ink/60">📍 Mönchberg · Spessart</span>
+            <span class="flex items-center gap-2.5 text-accent-ink/60">
+              <UIcon name="i-lucide-map-pin" class="w-4 h-4 shrink-0" />
+              Mönchberg · Spessart
+            </span>
           </div>
         </div>
 
@@ -74,7 +79,7 @@ const props = withDefaults(defineProps<{
           <ul class="flex flex-col gap-2.5 text-[14.5px]">
             <li class="text-accent-ink/80">Mo – Fr · 08 – 18 Uhr</li>
             <li class="text-accent-ink/50">Sa · nach Absprache</li>
-            <li class="text-accent-ink/50">So · Familie 👨‍👩‍👧</li>
+            <li class="flex items-center gap-2 text-accent-ink/50">So · Familie <UIcon name="i-lucide-heart" class="w-3.5 h-3.5" /></li>
           </ul>
         </div>
 
@@ -82,7 +87,7 @@ const props = withDefaults(defineProps<{
 
       <!-- Bottom bar -->
       <div class="mt-18 pt-6 border-t border-accent-ink/20 flex flex-col sm:flex-row justify-between gap-3 font-mono text-[11px] uppercase tracking-[0.14em] text-accent-ink/55">
-        <span>© {{ new Date().getFullYear() }} Fabian Stauder · Stauder Gartenpflege</span>
+        <span>© {{ new Date().getFullYear() }} Stauder Gartenpflege</span>
         <span>Impressum · Datenschutz</span>
       </div>
     </div>

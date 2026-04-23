@@ -41,7 +41,7 @@
             src="/img/map.jpg"
             alt="Einzugsgebiet Spessart – Karte"
             format="webp"
-            quality="80"
+            quality="75"
             width="800"
             height="640"
             sizes="100vw lg:600px"

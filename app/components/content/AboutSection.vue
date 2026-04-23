@@ -16,7 +16,7 @@
             <!-- Organic pill portrait -->
             <div class="w-full aspect-4/5 overflow-hidden bg-line rounded-[200px_200px_24px_200px] shadow-md">
               <NuxtImg
-                src="/img/fabian.png"
+                src="/img/fabian.webp"
                 alt="Fabian Stauder"
                 format="webp"
                 quality="70"

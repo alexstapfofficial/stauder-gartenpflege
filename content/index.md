@@ -145,7 +145,7 @@ Ein paar *Vorher & Nachher.*
 Bilder sagen mehr. Hier ein Auszug aus meinen letzten Projekten – ziehst mit dem Slider von links nach rechts.
 
 #items
-  ::gallery-section-item{title="Garten komplett" location="Hanau" beforeSrc="/img/gallery/Hanau_vorher.jpg" afterSrc="/img/gallery/Hanau_nachher.jpg" beforeAlt="Garten vor der Erneuerung in Friedrichsdorf" afterAlt="Garten nach der Erneuerung in Friedrichsdorf"}
+  ::gallery-section-item{title="Garten komplett" location="Hanau" beforeSrc="/img/gallery/Hanau_vorher.webp" afterSrc="/img/gallery/Hanau_nachher.webp" beforeAlt="Garten vor der Erneuerung in Friedrichsdorf" afterAlt="Garten nach der Erneuerung in Friedrichsdorf"}
   ::
 ::
 

@@ -38,7 +38,7 @@
         <!-- Map card (mobile: second, desktop: left col spanning both rows) -->
         <div class="order-2 lg:col-start-1 lg:row-start-1 lg:row-span-2 relative aspect-5/4 rounded-[32px] bg-cream shadow-md overflow-hidden">
           <NuxtImg
-            src="/img/map.jpg"
+            src="/img/map.webp"
             alt="Einzugsgebiet Spessart – Karte"
             format="webp"
             quality="70"

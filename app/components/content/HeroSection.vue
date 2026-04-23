@@ -85,7 +85,7 @@
               style="aspect-ratio: 3/4; border-radius: 220px 220px 24px 24px;"
             >
               <NuxtImg
-                src="/img/hero.png"
+                src="/img/hero.webp"
                 alt="Fabian Stauder – Gartenpflege Spessart"
                 format="webp"
                 quality="70"

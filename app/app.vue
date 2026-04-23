@@ -9,7 +9,8 @@ useSeoMeta({
 
 useHead({
   htmlAttrs: { lang: 'de' },
-  link: [{ rel: 'icon', href: '/favicon.ico' }]
+  link: [{ rel: 'icon', href: '/favicon.ico' }],
+  meta: [{ name: 'color-scheme', content: 'light' }]
 })
 
 const navLinks = [

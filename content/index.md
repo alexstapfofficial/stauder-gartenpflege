@@ -10,13 +10,13 @@ contact:
 
 ::hero-section
 #eyebrow
-lokalerBetrieb · Untermain - Spessart
+lokalerBetrieb · Spessart
 
 #headline
 Dein Garten.
 
 #headline-italic
-*Meine Leidenschaft.*
+*Meine Leidenschaft.* 
 
 #lead
 Gude, ich bin Fabian. Ich pflege Gärten so, als wären sie meine eigenen – vom ersten Rasenschnitt im März bis zum letzten Laubhaufen im November. Klein, persönlich, zuverlässig.
@@ -216,7 +216,7 @@ Du kommst von weiter entfernt? Für regelmäßige oder große Aufträge fahre ic
 Kontakt
 
 #heading
-Lass uns *quatschen* über deinen Garten.
+Lass uns quatschen über deinen Garten.
 
 #lead
 Kein Formular, keine Warteschleife. Ruf mich an oder schreib eine Nachricht – ich melde mich noch am selben Tag.

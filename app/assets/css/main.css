@@ -60,6 +60,7 @@ body {
 }
 
 :root {
+  color-scheme: light;
   --color-muted: #4a4640;
   --ui-text-muted: #4a4640;
 }

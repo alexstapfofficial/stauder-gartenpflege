@@ -37,10 +37,24 @@ export default defineNuxtConfig({
       'Instrument Serif': {
         wght: '400',
         ital: '400'
+      },
+      'Great Vibes': {
+        wght: '400'
       }
     },
     display: 'swap',
     preload: true
+  },
+
+  image: {
+    screens: {
+      xs: 320,
+      sm: 480,
+      md: 640,
+      lg: 1024,
+      xl: 1280
+    },
+    quality: 80
   },
 
   eslint: {

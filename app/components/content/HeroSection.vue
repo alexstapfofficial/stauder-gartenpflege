@@ -89,9 +89,9 @@
                 alt="Fabian Stauder – Gartenpflege Spessart"
                 format="webp"
                 quality="85"
-                width="320"
-                height="427"
-                sizes="288px lg:320px"
+                width="640"
+                height="853"
+                sizes="xs:288px lg:320px"
                 class="w-full h-full object-cover"
                 loading="eager"
               />

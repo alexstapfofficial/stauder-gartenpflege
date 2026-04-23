@@ -44,7 +44,13 @@ function startDrag(e: MouseEvent | TouchEvent) {
     <NuxtImg
       :src="beforeSrc"
       :alt="beforeAlt"
+      format="webp"
+      quality="85"
+      width="800"
+      height="600"
+      sizes="100vw lg:660px"
       class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
     />
 
     <!-- After image (clipped) -->
@@ -55,7 +61,13 @@ function startDrag(e: MouseEvent | TouchEvent) {
       <NuxtImg
         :src="afterSrc"
         :alt="afterAlt"
+        format="webp"
+        quality="85"
+        width="800"
+        height="600"
+        sizes="100vw lg:660px"
         class="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
       />
     </div>
 

@@ -40,7 +40,13 @@
           <NuxtImg
             src="/img/map.jpg"
             alt="Einzugsgebiet Spessart – Karte"
+            format="webp"
+            quality="80"
+            width="800"
+            height="640"
+            sizes="100vw lg:600px"
             class="w-full h-full object-cover object-center rounded-2xl"
+            loading="lazy"
           />
         </div>
 

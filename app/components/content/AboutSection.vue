@@ -18,6 +18,11 @@
               <NuxtImg
                 src="/img/fabian.png"
                 alt="Fabian Stauder"
+                format="webp"
+                quality="85"
+                width="384"
+                height="480"
+                sizes="100vw sm:384px"
                 class="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -55,7 +60,7 @@
 
           <!-- Signature -->
           <div class="flex items-end gap-4">
-            <span class="font-script text-5xl italic text-accent -rotate-3 inline-block leading-none">
+            <span class="font-signature text-5xl italic text-accent -rotate-3 inline-block leading-none">
               <slot name="signature" />
             </span>
             <div class="flex-1 h-px bg-line mb-2" />

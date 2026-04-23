@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
 
+  ui: {
+    colorMode: false,
+  },
+
   devtools: {
     enabled: true
   },
@@ -24,10 +28,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
-  colorMode: {
-    preference: 'light',
-    fallback: 'light'
-  },
 
   googleFonts: {
     families: {
@@ -62,6 +62,16 @@ export default defineNuxtConfig({
       xl: 1200
     },
     quality: 80
+  },
+
+  vite: {
+    build: {
+      modulePreload: {
+        resolveDependencies: (_filename, deps) => {
+          return deps.filter(dep => !dep.includes('sqlite'))
+        }
+      }
+    }
   },
 
   eslint: {

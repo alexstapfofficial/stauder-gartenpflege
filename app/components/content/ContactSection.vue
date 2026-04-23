@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-  <footer id="kontakt" class="relative overflow-hidden bg-ink text-accent-ink mt-20 rounded-t-[40px] pt-20 pb-10">
+  <footer id="kontakt" class="relative overflow-hidden bg-accent text-accent-ink mt-20 rounded-t-[40px] pt-20 pb-10">
 
     <!-- Botanical: fern top-right -->
     <div class="pointer-events-none absolute top-10 right-[8%] w-30 h-37.5 text-cream opacity-[0.08] rotate-18" aria-hidden="true">

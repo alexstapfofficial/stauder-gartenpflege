@@ -96,7 +96,7 @@ const props = withDefaults(defineProps<{
 
 <style scoped>
 /* Sun-colored italic for the heading slot (e.g. *quatschen*) */
-p :deep(em) {
+:deep(p em) {
   color: var(--color-sun);
   font-style: italic;
 }

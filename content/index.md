@@ -216,7 +216,7 @@ Du kommst von weiter entfernt? Für regelmäßige oder große Aufträge fahre ic
 Kontakt
 
 #heading
-Lass uns quatschen über deinen Garten.
+Lass uns *quatschen* über deinen Garten.
 
 #lead
 Kein Formular, keine Warteschleife. Ruf mich an oder schreib eine Nachricht – ich melde mich noch am selben Tag.

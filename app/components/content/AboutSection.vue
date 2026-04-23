@@ -23,7 +23,6 @@
                 width="384"
                 height="480"
                 sizes="(min-width: 480px) 384px, 100vw"
-                densities="1 2"
                 class="w-full h-full object-cover"
                 loading="lazy"
               />

@@ -54,8 +54,8 @@ export default defineNuxtConfig({
       xs: 320,
       sm: 480,
       md: 640,
-      lg: 1024,
-      xl: 1280
+      lg: 800,
+      xl: 1200
     },
     quality: 80
   },

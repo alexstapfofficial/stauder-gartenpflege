@@ -91,9 +91,11 @@
                 quality="85"
                 width="640"
                 height="853"
-                sizes="xs:288px lg:320px"
+                sizes="(min-width: 1024px) 320px, 288px"
+                densities="1 2"
                 class="w-full h-full object-cover"
                 loading="eager"
+                fetchpriority="high"
               />
             </div>
 

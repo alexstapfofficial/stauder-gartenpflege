@@ -52,9 +52,9 @@
           <h2 class="display text-4xl lg:text-5xl xl:text-6xl text-ink mt-4">
             <slot name="headline" />
           </h2>
-          <p class="mt-4 text-base lg:text-[17px] leading-relaxed text-ink-soft max-w-lg">
+          <div class="mt-4 text-base lg:text-[17px] leading-relaxed text-ink-soft max-w-lg">
             <slot name="lead" />
-          </p>
+          </div>
         </div>
       </div>
 

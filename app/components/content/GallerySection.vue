@@ -27,9 +27,9 @@
           <h2 class="display text-4xl lg:text-5xl text-ink mb-4">
             <slot name="headline" />
           </h2>
-          <p class="text-[17px] leading-relaxed text-ink-soft lg:ml-auto lg:max-w-130">
+          <div class="text-[17px] leading-relaxed text-ink-soft lg:ml-auto lg:max-w-130">
             <slot name="lead" />
-          </p>
+          </div>
         </div>
       </div>
 

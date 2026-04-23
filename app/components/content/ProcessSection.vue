@@ -46,9 +46,9 @@
             <h2 class="display text-4xl lg:text-5xl mb-4 text-accent-ink">
               <slot name="headline" />
             </h2>
-            <p class="text-[17px] leading-relaxed text-accent-ink/80">
+            <div class="text-[17px] leading-relaxed text-accent-ink/80">
               <slot name="lead" />
-            </p>
+            </div>
           </div>
         </div>
 

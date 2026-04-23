@@ -16,8 +16,8 @@ defineProps<{
       {{ title }}
     </h3>
 
-    <p class="text-[14.5px] leading-relaxed text-accent-ink/75">
+    <div class="text-[14.5px] leading-relaxed text-accent-ink/75">
       <slot />
-    </p>
+    </div>
   </div>
 </template>

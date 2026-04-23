@@ -54,9 +54,9 @@ const props = withDefaults(defineProps<{
           <h4 class="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-ink/60 mb-4">
             <slot name="eyebrow" />
           </h4>
-          <p class="display text-[44px] mb-6" style="line-height: 1.05;">
+          <div class="display text-[44px] mb-6" style="line-height: 1.05;">
             <slot name="heading" />
-          </p>
+          </div>
           <div class="flex flex-col gap-2.5 text-[15px]">
             <a :href="`tel:${props.phone.replace(/[\s·]/g, '')}`" class="flex items-center gap-2.5 text-accent-ink/80 hover:text-accent-ink transition-colors">
               <UIcon name="i-lucide-phone" class="w-4 h-4 shrink-0" />

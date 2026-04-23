@@ -52,15 +52,15 @@
 
         <!-- Body text (mobile: third, desktop: bottom-right) -->
         <div class="order-3 lg:col-start-2 lg:row-start-2 lg:pt-5">
-          <p class="text-[17px] leading-relaxed text-ink-soft max-w-110">
+          <div class="text-[17px] leading-relaxed text-ink-soft max-w-110">
             <slot name="lead" />
-          </p>
+          </div>
           <div class="flex flex-wrap gap-2 mt-7">
             <slot name="cities" />
           </div>
-          <p class="text-[13.5px] text-muted mt-6">
+          <div class="text-[13.5px] text-muted mt-6">
             <slot name="info" />
-          </p>
+          </div>
         </div>
 
       </div>

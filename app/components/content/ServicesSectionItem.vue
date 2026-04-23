@@ -22,9 +22,9 @@ defineProps<{
       {{ title }}
     </h3>
 
-    <p class="text-[14.5px] leading-relaxed text-ink-soft mb-[18px]">
+    <div class="text-[14.5px] leading-relaxed text-ink-soft mb-[18px]">
       <slot />
-    </p>
+    </div>
 
     <div class="flex flex-wrap gap-1.5">
       <span

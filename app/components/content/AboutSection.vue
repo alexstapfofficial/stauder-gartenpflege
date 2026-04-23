@@ -49,9 +49,9 @@
           </h2>
 
           <blockquote class="pl-6 mb-8 border-l-2 border-accent">
-            <p class="font-display text-xl lg:text-2xl italic leading-snug text-ink">
+            <div class="font-display text-xl lg:text-2xl italic leading-snug text-ink">
               „<slot name="quote" />"
-            </p>
+            </div>
           </blockquote>
 
           <div class="space-y-4 mb-10 text-[17px] leading-relaxed text-ink-soft">

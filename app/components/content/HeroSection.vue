@@ -121,9 +121,9 @@
           <em class="display text-5xl lg:text-6xl xl:text-7xl text-ink block mb-6">
             <slot name="headline-italic" />
           </em>
-          <p class="text-lg leading-relaxed mb-8 max-w-lg text-ink-soft">
+          <div class="text-lg leading-relaxed mb-8 max-w-lg text-ink-soft">
             <slot name="lead" />
-          </p>
+          </div>
 
           <div class="flex flex-wrap gap-3">
             <UButton

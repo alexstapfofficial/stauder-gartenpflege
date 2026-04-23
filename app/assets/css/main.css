@@ -13,13 +13,14 @@
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Instrument Serif', Georgia, serif;
   --font-script: 'Fraunces', Georgia, serif;
+  --font-signature: 'Great Vibes', cursive;
   --font-mono: 'Geist Mono', ui-monospace, monospace;
 
   --color-bg: #f4efe6;
   --color-bg-soft: #ebe4d6;
   --color-ink: #1d2a22;
   --color-ink-soft: #4a5649;
-  --color-muted: #7a7668;
+  --color-muted: #4a4640;
   --color-line: #d8cfbd;
   --color-accent: #2e4a2b;
   --color-accent-soft: #5b7a4b;
@@ -56,6 +57,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+:root {
+  --color-muted: #4a4640;
+  --ui-text-muted: #4a4640;
 }
 
 /* Eyebrow label with leading line */

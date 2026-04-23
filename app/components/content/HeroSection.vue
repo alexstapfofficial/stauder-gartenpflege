@@ -3,11 +3,10 @@
 </script>
 
 <template>
-  <section class="relative pt-20 pb-24 lg:pt-28 lg:pb-32 bg-bg">
+  <section class="relative pt-20 pb-24 lg:pt-28 lg:pb-32 bg-bg overflow-x-hidden">
     <!-- Blobs clipped to section -->
-    <div class="absolute inset-0 pointer-events-none" overflow-x-hidden aria-hidden="true">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <div class="blob blob-1" />
-      <div class="blob blob-2" />
     </div>
 
     <!-- Botanical: fern bottom-left -->

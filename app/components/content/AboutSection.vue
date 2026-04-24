@@ -30,7 +30,7 @@
 
             <!-- Circular logo sticker -->
             <div class="absolute -bottom-5 -right-5 lg:-right-8 w-28 h-28 rounded-full bg-cream border border-line shadow-md flex items-center justify-center p-3 overflow-hidden">
-              <img src="/img/logo.svg" alt="" class="w-full h-full object-contain" aria-hidden="true" />
+              <img src="/img/logo.svg" alt="" class="w-full h-full object-contain" aria-hidden="true" loading="lazy" />
             </div>
           </div>
 

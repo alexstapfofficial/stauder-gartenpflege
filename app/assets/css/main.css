@@ -54,14 +54,14 @@ body {
   background-color: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-sans);
-  color-scheme: light only;
+  color-scheme: light dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 :root {
-  color-scheme: light only;
+  color-scheme: light dark;
   --color-muted: #4a4640;
   --ui-text-muted: #4a4640;
 }
@@ -106,10 +106,37 @@ body {
   color: var(--color-accent);
 }
 
-/* Force light mode - override any dark mode source (extension, browser flag, .dark class) */
+/* Fake dark mode: Samsung Browser and other forced-dark agents see these overrides
+   and believe dark mode is applied — but all values are identical to light mode. */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light;
+    color-scheme: light dark;
+    --color-bg: #f4efe6;
+    --color-bg-soft: #ebe4d6;
+    --color-ink: #1d2a22;
+    --color-ink-soft: #4a5649;
+    --color-muted: #4a4640;
+    --color-line: #d8cfbd;
+    --color-accent: #2e4a2b;
+    --color-accent-soft: #5b7a4b;
+    --color-accent-ink: #f4efe6;
+    --color-cream: #faf6ee;
+    --color-sun: #d4a94a;
+    --ui-text-dimmed: var(--ui-color-neutral-400);
+    --ui-text-muted: var(--ui-color-neutral-500);
+    --ui-text-toned: var(--ui-color-neutral-600);
+    --ui-text: var(--ui-color-neutral-700);
+    --ui-text-highlighted: var(--ui-color-neutral-900);
+    --ui-text-inverted: #fff;
+    --ui-bg: #fff;
+    --ui-bg-muted: var(--ui-color-neutral-50);
+    --ui-bg-elevated: var(--ui-color-neutral-100);
+    --ui-bg-accented: var(--ui-color-neutral-200);
+    --ui-bg-inverted: var(--ui-color-neutral-900);
+    --ui-border: var(--ui-color-neutral-200);
+    --ui-border-muted: var(--ui-color-neutral-200);
+    --ui-border-accented: var(--ui-color-neutral-300);
+    --ui-border-inverted: var(--ui-color-neutral-900);
   }
   html, body {
     background-color: var(--color-bg);
@@ -118,6 +145,18 @@ body {
 }
 
 .dark {
+  color-scheme: light dark;
+  --color-bg: #f4efe6;
+  --color-bg-soft: #ebe4d6;
+  --color-ink: #1d2a22;
+  --color-ink-soft: #4a5649;
+  --color-muted: #4a4640;
+  --color-line: #d8cfbd;
+  --color-accent: #2e4a2b;
+  --color-accent-soft: #5b7a4b;
+  --color-accent-ink: #f4efe6;
+  --color-cream: #faf6ee;
+  --color-sun: #d4a94a;
   --ui-text-dimmed: var(--ui-color-neutral-400);
   --ui-text-muted: var(--ui-color-neutral-500);
   --ui-text-toned: var(--ui-color-neutral-600);
@@ -133,5 +172,4 @@ body {
   --ui-border-muted: var(--ui-color-neutral-200);
   --ui-border-accented: var(--ui-color-neutral-300);
   --ui-border-inverted: var(--ui-color-neutral-900);
-  color-scheme: light;
 }

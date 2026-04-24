@@ -8,8 +8,12 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
 
-  ui: {
-    colorMode: false,
+  app: {
+    head: {
+      meta: [
+        { name: 'color-scheme', content: 'light dark' }
+      ]
+    }
   },
 
   devtools: {
